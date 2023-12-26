@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function giveMeFive(obj){
+  let myArr = [];
+  
+  for(var key in obj) {
+    if(key.length == 5) {
+      myArr.push(key);
+    }
+    if(obj[key].length == 5) {
+      myArr.push(obj[key]);
+    }
+  }
+  return myArr;
+}
+    </script>
+</body>
+</html>
